@@ -19,14 +19,32 @@ export default class App extends React.Component {
     socket.emit('play-pause')
   }
 
+  foward(type: string) {
+    socket.emit('jump-forward', type)
+  }
+
+  back(type: string) {
+    socket.emit('jump-back', type)
+  }
+
   render() {
     return (
-      
+
       <View style={styles.container}>
         <Text>Contro your computer!!</Text>
+        <hr />
         <button onClick={this.playPause}>
           <Text>Play / Pause</Text>
         </button>
+        <hr />
+        <button onClick={() => this.foward('three-seconds')}>
+          <Text>Jump 3 seconds</Text>
+        </button>
+        <hr />
+        <button onClick={() => this.back('three-seconds')}>
+          <Text>Back 3 seconds</Text>
+        </button>
+        <hr />
       </View>
     );
   }
