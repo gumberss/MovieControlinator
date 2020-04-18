@@ -164,6 +164,8 @@ buck-out/
 # CocoaPods
 movie-controlinator-client/ios/Pods/
 movie-controlinator-client/ios/
+movie-controlinator-client/android/
+
 
 # Expo
-movie-controlinator-client/..expo/*
+movie-controlinator-client/.expo/
