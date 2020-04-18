@@ -1,0 +1,23 @@
+{
+  "name": "movie-controlinator-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Gustavo Marin Suppi",
+    "url": "https://github.com/gumberss"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "node-key-sender": "^1.0.11",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  }
+}
