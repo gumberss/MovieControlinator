@@ -2,5 +2,5 @@ const ks = require('node-key-sender')
 
 module.exports = {
 
-     playPause: async () =>  await ks.sendKey('space')
+     playPause: () => ks.sendKey('space')
 }

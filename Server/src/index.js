@@ -5,7 +5,7 @@ const app = require('express')()
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 
-const routes = require('./routes')   
+const routes = require('./routes')
 /*
 
 app.use((req, res, next) => {
@@ -18,8 +18,8 @@ app.use((req, res, next) => {
 //app.use(express.json())
 //app.use(require('./routes'))
 
-io.on('connection', socket => routes.registerEvent)
+io.on('connection', routes.registerEvent)
 
-server.listen(process.env.PORT || 3000, () => {
-    console.log('Server started on port 3000')
+server.listen(5000, '192.168.100.77', () => {
+    console.log('Server started on port 5000')
 })

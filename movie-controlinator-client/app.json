@@ -1,0 +1,17 @@
+{
+  "name": "movie-controlinator-client",
+  "displayName": "movie-controlinator-client",
+  "expo": {
+    "name": "movie-controlinator-client",
+    "slug": "movie-controlinator-client",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

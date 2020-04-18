@@ -1,7 +1,7 @@
-var movieControl = require('./controllers/MovieControl')
+const MovieControl = require('./controllers/MovieControl')
 
 module.exports = {
-    async registerEvent(socket) {
+    registerEvent(socket) {
 
         console.log(`User: ${socket.id} connected`)
 
@@ -9,7 +9,8 @@ module.exports = {
 
         socket.on('play-pause', MovieControl.playPause)
 
-        socket.on('volume-up', MovieControl.volumeUp)
+        /**
+         * socket.on('volume-up', MovieControl.volumeUp)
         socket.on('volume-down', MovieControl.volumeDown)
 
         socket.on('jump-forward', MovieControl.jumpForward)
@@ -17,6 +18,8 @@ module.exports = {
 
         socket.on('subtitle-delay-up', MovieControl.subtitleDelayUp)
         socket.on('subtitle-delay-down', MovieControl.subtitleDelayDown)
+         * 
+         */
     }
 }
 
