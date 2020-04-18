@@ -130,11 +130,11 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
-build/
-.idea
-.gradle
-local.properties
-*.iml
+movie-controlinator-client/build/
+movie-controlinator-client/.idea
+movie-controlinator-client/.gradle
+movie-controlinator-client/local.properties
+movie-controlinator-client/*.iml
 
 # node.js
 #
@@ -162,7 +162,8 @@ buck-out/
 *.jsbundle
 
 # CocoaPods
-/ios/Pods/
+movie-controlinator-client/ios/Pods/
+movie-controlinator-client/ios/
 
 # Expo
-.expo/*
+movie-controlinator-client/..expo/*
