@@ -33,6 +33,9 @@ module.exports = {
           console.log(commands)
 
           commands && ks.sendCombination(commands)
+     },
+     volumeUp: () => ks.sendCombination(['control', 'up']),
+     volumeDown: () => ks.sendCombination(['control', 'down'])
 
-     }
+
 }

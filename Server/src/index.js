@@ -20,6 +20,15 @@ app.use((req, res, next) => {
 
 io.on('connection', routes.registerEvent)
 
-server.listen(5000, '192.168.100.77', () => {
-    console.log('Server started on port 5000')
+var os = require( 'os' );
+
+var networkInterfaces = os.networkInterfaces( );
+
+const connection = networkInterfaces.Ethernet || networkInterfaces['Wi-Fi']
+
+const address = connection && connection[1].address
+const port = 5000
+
+server.listen(port, address, () => {
+    console.log(`Server started on ${address}:${port}`)
 })

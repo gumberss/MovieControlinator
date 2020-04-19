@@ -12,14 +12,12 @@ module.exports = {
         socket.on('jump-forward', MovieControl.jumpForward)
         socket.on('jump-back', MovieControl.jumpBack)
 
-        /**
-         * socket.on('volume-up', MovieControl.volumeUp)
+        socket.on('volume-up', MovieControl.volumeUp)
         socket.on('volume-down', MovieControl.volumeDown)
 
-        
-
-        socket.on('subtitle-delay-up', MovieControl.subtitleDelayUp)
-        socket.on('subtitle-delay-down', MovieControl.subtitleDelayDown)
+        /**
+            socket.on('subtitle-delay-up', MovieControl.subtitleDelayUp)
+            socket.on('subtitle-delay-down', MovieControl.subtitleDelayDown)
          * 
          */
     }
